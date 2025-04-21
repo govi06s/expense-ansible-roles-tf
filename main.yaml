@@ -4,6 +4,7 @@
 
 - name: "configure {{component}} the backend"
   hosts: all
+  connection: local
   become: yes
   vars_files:
   - "variables-{{ environment }}.yaml"
