@@ -5,7 +5,7 @@
 - name: "configure {{component}} the backend"
   hosts: all
   become: yes
-  # vars_files:
-  # - "variables-{{ environment }}.yaml"
+  vars_files:
+  - "variables-{{ environment }}.yaml"
   roles:
   - "{{component}}"
